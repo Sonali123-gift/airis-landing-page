@@ -286,7 +286,7 @@ function HomePage({ navigate }: { navigate: (p: Page) => void }) {
             {/* Central icon */}
             <div className="animate-float absolute" style={{ zIndex: 2 }}>
               <div style={{ width: 200, height: 200, borderRadius: '50%', background: 'rgba(255,255,255,0.08)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 32px 64px rgba(0,0,0,0.3)' }}>
-                <img src={airisIcon} alt="Airis Lens" style={{ width: 120, height: 120, filter: 'brightness(0) invert(1)' }} />
+                <img src={airisIcon} alt="Airis Lens" style={{ width: 120, height: 120 }} />
               </div>
             </div>
 
