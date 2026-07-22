@@ -27,11 +27,10 @@ function Nav({ current, navigate }: { current: Page; navigate: (p: Page) => void
   return (
     <nav
       className="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
-      style={{
-        background: scrolled ? 'rgba(255,255,255,0.92)' : 'rgba(255,255,255,0.0)',
-        backdropFilter: scrolled ? 'blur(16px)' : 'none',
-        borderBottom: scrolled ? '1px solid #E5E7EB' : 'none',
-        boxShadow: scrolled ? '0 4px 24px rgba(0,0,0,0.06)' : 'none',
+      style={{ background: 'rgba(255,255,255,0.95)',
+        backdropFilter: 'blur(16px)',
+        borderBottom: '1px solid #E5E7EB',
+        boxShadow: '0 4px 24px rgba(0,0,0,0.06)',
       }}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16">
