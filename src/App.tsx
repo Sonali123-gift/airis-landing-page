@@ -194,7 +194,8 @@ function HomePage({ navigate }: { navigate: (p: Page) => void }) {
     { title: 'Wireless Charging', desc: 'Inductive charging case restores power in 30 minutes. 18-hour battery life.', icon: '⚡', color: '#F5A742' },
     { title: 'Emergency Detection', desc: 'Detects sudden vision changes and alerts emergency contacts automatically.', icon: '🚨', color: '#10B981' },
     { title: 'AI Assistant', desc: 'Voice and blink-controlled heads-up display for navigation and notifications.', icon: '🤖', color: '#38BDF8' },
-  ]
+    { title: 'AI Earbuds',desc: 'Companion wireless earbuds provide voice assistance, real-time translation, private audio, navigation guidance, and emergency alerts while seamlessly connecting with Airis smart lenses.',icon: ' ',color: '#8B5CF6'
+},]
 
   const techNodes = [
     { label: 'Smart Lens', desc: 'Ultra-thin hydrogel lens with embedded photonic circuits. 14.5mm diameter, 0.08mm center thickness.', icon: '💧' },
@@ -202,7 +203,8 @@ function HomePage({ navigate }: { navigate: (p: Page) => void }) {
     { label: 'AI Processor', desc: 'Custom silicon at 5nm node. 2.4 TOPS performance at 0.3mW power consumption.', icon: '🧠' },
     { label: 'Cloud Sync', desc: 'Encrypted BLE 5.3 transmission to companion app. End-to-end zero-knowledge architecture.', icon: '☁️' },
     { label: 'Mobile App', desc: 'iOS and Android companion app with real-time dashboards, trend analytics, and clinician sharing.', icon: '📱' },
-  ]
+    { label: 'AI Earbuds',desc: 'Bluetooth 5.4 earbuds with AI voice assistant, spatial audio, real-time translation, and secure communication with Airis Smart Lens.',icon: ' '
+},]
 
   const testimonials = [
     { name: 'Sonali Khadka', role: 'Ophthalmologist, Stanford Medical', text: "Airis represents a paradigm shift in preventive eye care. The continuous IOP monitoring alone could transform how we manage glaucoma patients.", avatar: '👩‍⚕️' },
@@ -213,7 +215,7 @@ function HomePage({ navigate }: { navigate: (p: Page) => void }) {
 
   const faqs = [
     { q: 'Is Airis safe to wear?', a: 'Airis has undergone extensive clinical trials across 18 countries. All materials are ISO 13485 certified and FDA breakthrough device designated. Over 4,000 participants reported zero adverse events in our Phase III trials.' },
-    { q: 'How long can I wear Airis per day?', a: 'Airis is approved for up to 16 hours of continuous wear. The lens is highly oxygen-permeable (Dk/t = 175) ensuring corneal health throughout the day.' },
+    { q: 'Why does Airis include AI Earbuds?',a: 'The Airis AI Earbuds work together with the smart contact lens to provide private audio, voice commands, live language translation, navigation guidance, phone calls, and emergency alerts without requiring users to look at their phones.'},{ q: 'How long can I wear Airis per day?', a: 'Airis is approved for up to 16 hours of continuous wear. The lens is highly oxygen-permeable (Dk/t = 175) ensuring corneal health throughout the day.' },
     { q: 'Does it work with prescriptions?', a: 'Yes. Airis is available in sphere powers from -12.00 to +8.00 D with cylinder correction up to -4.00 D. Our adaptive optics layer provides an additional ±2.00 D of dynamic correction.' },
     { q: 'How does charging work?', a: 'Your lenses charge in a proprietary inductive case — similar to wireless earbuds. A full charge is achieved in under 30 minutes and provides 18 hours of active use.' },
     { q: 'When will Airis be available?', a: 'We are currently accepting early access applications. Commercial availability is planned for Q2 2027, initially in the US, EU, UK, Japan, and Australia.' },
@@ -337,6 +339,7 @@ function HomePage({ navigate }: { navigate: (p: Page) => void }) {
               { title: 'Smart Vision', icon: '🔭', color: '#2563EB', bg: 'rgba(37,99,235,0.06)', desc: 'Adaptive optics that automatically correct your vision in real time — indoors, outdoors, up close, far away. No more switching glasses.' },
               { title: 'Health Monitoring', icon: '🫀', color: '#10B981', bg: 'rgba(16,185,129,0.06)', desc: 'Continuous, medical-grade monitoring of intraocular pressure, corneal glucose, and 10 other biomarkers directly from your eye.' },
               { title: 'Privacy First', icon: '🔒', color: '#0F2544', bg: 'rgba(15,37,68,0.06)', desc: 'All health data is processed on-device with zero-knowledge encryption. We never see your data. You own it completely.' },
+              { title: 'Smart Audio',icon: ' ',color: '#8B5CF6',bg: 'rgba(139,92,246,0.06)',desc: 'Receive navigation, AI assistance, emergency alerts, calls, and live translation directly through wireless earbuds without distracting your vision.'},
             ].map(card => (
               <div
                 key={card.title}
